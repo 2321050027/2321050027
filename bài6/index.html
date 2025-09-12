@@ -5,61 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>spotify</title>
     <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="bang">
-        <div class="bang trai">
-            <h2>spotify</h2>
-            <ul> class="nav">
-            <li>Home</li>
-            <li>search</li>
-            <li>thu vien</li>
-            </ul>
-            <div class="extra">
-                <P>Play list 1</P>
-                <p> podcast1</p>
-     </div>
-    </div>
-    
-    <div class="center-panel">
-      <h1>Liked Songs (409)</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Bài hát</th>
-            <th>Ca sĩ</th>
-            <th>Album</th>
-            <th>Ngày thêm</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="highlight">
-            <td>Zui</td>
-            <td>Ngọt</td>
-            <td>Ngọt</td>
-            <td>08/09/2025</td>
-          </tr>
-          <!-- Các bài hát khác -->
-        </tbody>
-      </table>
+    <div class="main">
+        <nav class="menu">
+            <div class="menu_left">
+                <button><i class="fa fa-ellipsis-h"></i></button>
+                <button><i class="fa fa-mail-reply"></i></button>
+                <button><i class="fa fa-mail-forward"></i></button>
+
+            </div>
+            <div class="menu_center">
+                <a href="#"><i class="fa-regular fa-house" style="color: white;"></i></a>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="What do you want to play?" class="icon_search">
+            </div>
+            <div class="menu_right">
+                <button><i class="fa-solid fa-bell"></i></button>
+                <button><i class="fa-solid fa-users"></i></button>
+            </div>
+        </nav>
     </div>
 
-    <div class="right-panel">
-      <h3>Bài hát nổi bật</h3>
-      <ul>
-        <li>Ngàn Năm Ánh Sáng - Lynk Lee</li>
-        <li>Đừng Vội Thích - Đặng Vi Thủy</li>
-      </ul>
-    </div>
+    <div class="main_body">
+        <div class="main_body_left">
+            <div class="main_body_left_1">
+                <div><h1>Your library</h1></div>
+                <div class="create">
+                    <a href="#" style="color: white;"><i class="fa-solid fa-plus"></i>Create</a>
+                </div>
+                <div>
+                    <a href="#"><i class="glyphicon glyphicon-resize-full"></i></a>
+                </div>
+            </div>
 
-    <div class="footer-player">
-      <div class="controls">
-        <button>⏮️</button>
-        <button>▶️</button>
-        <button>⏭️</button>
+            <nav class="danhsach">
+                <button>Playlists</button>
+                <button>Podcasts</button>
+                <button>Albums</button>
+                <button>Artists</button>
+            </nav>
+            <div class="danhsach_1">
+                <a href="#" style="color: white;"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" style="color: white;">Recents<i class="fa fa-bars"></i></a>
+            </div>
+            <div class="main_body_left_2">
+                <div class="list">
+                    <img src="anh2.png" alt="" height="50" width="50">
+                    <div class="list_ds">
+                        <p>Liked Songs</p>
+                        <p><i class="fa fa-thumb-tack"></i>Playlist-409songs</p>                 
+                    </div>
+                </div>
+
+                <div class="list">
+                    <img src="anh1.png" alt="" height="50" width="50">
+                    <div class="list_ds">
+                        <p>Liked Songs</p>
+                        <p><i class="fa fa-thumb-tack"></i>Playlist-409songs</p>                       
+                    </div>
+                </div>
+
+                <div class="list">
+                    <img src="anh1.png" alt="" height="50" width="50">
+                    <div class="list_ds">
+                        <p>Liked Songs</p>
+                        <p><i class="fa fa-thumb-tack"></i>Playlist-409songs</p>                        
+                    </div>
+                </div>
+
+                <div class="list">
+                    <img src="anh1.png" alt="" height="50" width="50">
+                    <div class="list_ds">
+                        <p>Liked Songs</p>
+                        <p><i class="fa fa-thumb-tack"></i>Playlist-409songs</p>                        
+                    </div>
+                </div>
+
+                <div class="list">
+                    <img src="anh2.png" alt="" height="50" width="50">
+                    <div class="list_ds">
+                        <p>Liked Songs</p>
+                        <p><i class="fa fa-thumb-tack"></i>Playlist-409songs</p>                        
+                    </div>
+                </div>
+
+                <div class="list">
+                    <img src="anh2.png" alt="" height="50" width="50">
+                    <div class="list_ds">
+                        <p>Liked Songs</p>
+                        <p><i class="fa fa-thumb-tack"></i>Playlist-409songs</p>                        
+                    </div>
+                </div>
+
+                <div class="list">
+                    <img src="anh2.png" alt="" height="50" width="50">
+                    <div class="list_ds">
+                        <p>Liked Songs</p>
+                        <p><i class="fa fa-thumb-tack"></i>Playlist-409songs</p>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_body_center">
+            <h2>Play</h2>
+            <div>
+              <h2><button>all</button>
+                <button>music</button>
+                <button>postcard</button>
+              </h2>
+             <div class="all">
+              <img src="anh2.png" alt="">
+              <img src="anh2.png" alt="">
+              <img src="anh2.png" alt="">
+              <img src="anh2.png" alt="">
+              <br> 
+              <img src="anh2.png" alt="">
+              <img src="anh2.png" alt="">
+              <img src="anh2.png" alt="">
+              <img src="anh2.png" alt="">
+              <h2>made for</h2>
+              <h3>Kel</h3>
+              <div class="Kel">
+                <img src="anh2.png">
+                <img src="anh2.png">
+                <img src="anh2.png">
+                <img src="anh2.png">
+                <br>
+                <img src="anh2.png">
+                <img src="anh2.png">
+                <img src="anh2.png">
+                <img src="anh2.png">
+              </div>
+             </div>
+            </div>
+        </div>
+
+        <div class="main_body_right">
+          <h3>Liked songs</h3> 
+        <div class="Liked songs">
+      <img src="anh6.png" alt="" >
+      <br>
+      <button> switch to video></button>
+      <div class="switch to video">
+        <img src="anh8.png" alt="">
       </div>
-      <div class="volume">🔊 Âm lượng</div>
+      </div>
+      </div>
     </div>
-</div>
 </body>
 </html>
