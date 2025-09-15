@@ -1,0 +1,13 @@
+body{
+    background-color: white;
+    margin:auto ;
+}
+.main{
+    background-color: white;
+    width: 80%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+}
