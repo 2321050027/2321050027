@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <script src ="script.js"></script>
+    <script>
+        // de viet chu thich js dung ki tu //
+        document.writeln("hello world <br>");
+        let hoTen =" phan van tuan";
+        document.writeln(hoTen +"<br>") //nối chuỗi//
+        //hang
+        const pi = 3.14;
+
+        let soThuNhat=10;
+        let soThuHai=5;
+        let KetQua=0;
+        //+ -soTHuNhat+=soThuHai la số thứ 1 = so thứ 2- 
+        KetQua = soThuNhat +soThuHai;
+        document.writeln(KetQua);
+        // == không quan tâm kiểu dữ liệus or === có qt-so sánh. ! khác//
+
+        let hoTenSinhVien = {
+            hoTen:" Phan Văn Tuân",
+            tuoi : 20,
+            gioiTinh: true ,
+            lop : "CNTT k68b"
+            diaChi :{
+                
+            }
+        }
+        
+        document.writeln("xin chào"+ hoTenSinhVien.hoTen +"lớp" hoTenSinhVien.lop + <br> );
+        let diaChiTuan = {
+            thanhPho :"Ninh Bình",
+            xa:" Giao Thủy",
+            duong: "Trần Hưng Đạo",
+            soNha : 100
+        }
+        hoTenSinhVien.diaChi=diaChiTuan;
+        document.writeln("xin chào"+ hoTenSinhVien.hoTen+"lớp:"hoTenSinhVien.lop+"số nhà:"+ hoTenSinhVien.diaChi.soNha+"đường:"=hoTenSinhVien.duong)
+        let soThuHai = "10";
+        parseInt(soThuHai);
+        document.writeln( typeof( soThuHai));
+
+
+    </script>
+    
+</body>
+</html>
