@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"> </script>
+    <script>
+        let maKhachHang{};
+        
+       let thongTinKhachHang = {
+         hoTen: "phan van tuan",
+         soDienThoai: "0337767520",
+         trangThaiThanhVienThanThiet: true
+};
+
+        
+       let danhSachSanPham = {
+  caPhe: {
+    maSanPham: "sp01",
+    tenSanPham: "cà phê",
+    soLuong: 10,
+    giaTienMotSanPham: 10000
+  },
+  matcha: {
+    maSanPham: "sp02",
+    tenSanPham: "matcha",
+    soLuong: 15,
+    giaTienMotSanPham: 15000
+  },
+  traSua: {
+    maSanPham: "sp03",
+    tenSanPham: "trà sữa",
+    soLuong: 10,
+    giaTienMotSanPham: 10000
+  },
+  trangThai: false,
+  diaChi: "Đông Ngạc, Hà Nội"
+};
+
+    let danhSachSP = danhSachSanPham;
+
+let Tongsp01 = danhSachSP.caPhe.soLuong * danhSachSP.caPhe.giaTienMotSanPham;
+let Tongsp02 = danhSachSP.matcha.soLuong * danhSachSP.matcha.giaTienMotSanPham;
+let Tongsp03 = danhSachSP.traSua.soLuong * danhSachSP.traSua.giaTienMotSanPham;
+
+let tong = Tongsp01 + Tongsp02 + Tongsp03;
+document.writeln("Số tiền phải thanh toán: " + tong);
+
+
+        
+        // string
+        let hoten= "phan van tuan";
+        document.writeln(hoten.length);
+
+        let myString ="hello";
+        document.writeln(myString[4]);// lấy
+         let myString ="hello";
+        document.writeln(myString.slice(1,4));// cắt
+         let myString ="hello";
+        document.writeln(myString.replace("hello","hi"));//chuyển
+        document.writeln(myString.toLocaleLowerCase());//chữ  thường
+        document.writeln(myString.indexOf("a"));// tìm kiếm cần vtri
+        document.writeln(myString.includes("e")),// kiểm tra không cần vị trí
+        // tách chuỗi thành mảng
+        document.writeln(myString.split(''));
+        //kiểm tra kí tự đầu có k
+        document.writeln(myString.startsWith('hello'));
+        
+        var pi=3.14159
+        pi.toFixed(2);// ket qua 3.14
+
+        let toDay= new Date();
+        document.writeln(toDay);
+        // lây ra năm
+        document.writeln(toDay.getFullYear());
+
+
+
+        
+    </script>
+    
+</body>
+</html>
