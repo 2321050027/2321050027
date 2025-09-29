@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAI 11</title>
+</head>
+<body>
+    <script>
+
+        //MẢNG
+            let arr = [1, 2, 3, 4, 'a', 'b', 'c', 2, 3];
+            let ten = 'ten';
+            let thongtin ={
+                ten: ten
+            };
+
+            // kiểm tra xem có phải là mảng hay không
+            document.writeln(Array.isArray(arr)+"<br>");
+
+            // kiểm tra độ dài của mảng
+            document.writeln(arr.length+"<br>");
+
+            //lấy ra 1 phần tử trong mảng
+            document.writeln(arr[2]+"<br>");
+
+            //kiểm tra xem trong mảng có tồn tại phần tử cần tìm không 
+            // Indexof-trả về phần tử đầu tiên 
+            document.writeln(arr.indexOf(3)+"<br>");
+            // lastIndexof - trả về phần tử cuối cùng
+            document.writeln(arr.lastIndexOf(3)+"<br>");
+
+            //thay đổi 1 giá trị trong mảng
+            arr[3] = 6;
+            document.writeln(arr+"<br>");
+            
+            //ví dụ 1
+            let a,b,c,d;
+            a = [1,2,3];
+            b="JavaScrpit";
+            c = [42,'JS'];
+            d = a.concat(b,c)
+            document.writeln(d+"<br>");
+            document.writeln(Array.isArray(d)+"<br>");
+
+            //ví dụ 2
+            //d=d.join("/");
+            document.writeln(Array.isArray(d)+"<br>");
+            document.writeln(d+"<br>");
+
+            //xóa đi phần tử cuối cùng trong mảng
+            d.pop();
+            //đảy thêm ptu vào mảng
+            d.push("Tuân");
+            //đảo lại mảng
+            d.reverse()
+            document.writeln(d);
+
+            // câu lệnh điều kiện
+            let so="10";
+            if ( so%2==0)
+        {Document.writeln(so+"là số chẵn");
+
+        }
+        else{
+        Document.writeln(so+"là số lẻ");
+        }
+        let now = new date().getHours;
+       
+        if(now>=5&& now<10){ document.writeln("chào buổi sáng");
+        }
+        else if(now>=10&& now<13){
+            document.writeln("chào buổi trưa");
+            
+        }
+        let a,b,c,tongdiem;
+        a=10
+        b
+         tongdiem=a*0.6+b*0.3+c*0.1
+         if(tongdiem>=8 && tongdiem<=10){
+            document.writeln("bạn được điểm A")
+         }
+         else if(tongdiem<=8 && tongdiem<7){
+            document.writeln("bạn được điểm B")
+
+         }
+         
+
+    </script>
+</body>
+</html>
