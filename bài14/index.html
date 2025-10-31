@@ -1,0 +1,51 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+    <div  class="container">
+      <div> 
+         <h1> vi du ve thay doi che do</h1>
+    </div>
+    <div>
+       <img >
+    </div>
+    <div>
+        <h1> che do sang</h1>
+    </div>
+    <div> <button onclick="doichedo()">Thay Doi che do</button>
+    </div>
+    </div>
+    
+    <script>
+        let cheDo= true;
+        function doichedo()
+        if(cheDo==true){
+        document.getElementsByTagName('body')[0].style='background-coler:black;
+        document.getElementsByTagName('h1')[0].style='coler:yellow;
+        document.getElementsByTagName('h1')[1].style='coler:white;
+        document.getElementsByClassName('anh')[0].src=''
+        cheDo= false;
+        }
+        else{
+            document.getElementsByTagName('body')[0].style='background-coler:white;
+        document.getElementsByTagName('h1')[0].style='coler:black;
+        document.getElementsByTagName('h1')[1].style='coler:black;
+        document.getElementsByClassName('anh')[0].src=''
+        cheDo= true;
+        }
+    
+    
+    </script>
+    </body>
+    </html>
