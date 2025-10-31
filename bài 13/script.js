@@ -1,0 +1,1 @@
+ocument.writeln("hello world" +"<br>")
