@@ -4,44 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .main{
+           background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            margin-top: 145px;
+            margin-left: 350px;
+            border-radius: 32px;
+            width: 40%;
+            gap:30px;
+        }
+    </style>
 </head>
 <body>
-    <h1> tinh chi so bmi</h1>
-    <div>
-        <p> nhap vao chieu cao</p>
-        <input type="text" id ="chieucao">
+    <div class="main">
+        <div>
+            <div>
+                <p>nhập vào chiều cao(m)</p>
+                <input type="text" id="chieucao">
+            </div>
+            <div>
+                <p>nhập cân nặng(kg) </p>
+                <input type="text" id="cannang">
+            </div>
+            <div>
+                <button onclick="bmi()">tính BMI</button>
+            </div>
+            <div>
+               <p> kết quả </p>
+                <input type="text"  id="kq">
+                <h1></h1>
+            </div>
+        </div>
+        <div>
+            <img class="images" width="125px" height="250px" src="" alt="">
+        </div>
     </div>
-    <div>
-        <p> nhap vao can nang</p>
-        <input type="text" id="cannang">
-    </div>
-    <div>
-        <button onclick="tinhBMI()">chi so bmi</button>
-    </div>
-    <div>
-        kết quả: <input type="number" id ="ketqua" class="ket-qua">
-    </div>
+
     <script>
-         function tinhBMI(){
-            let chieucao = parseFloat(document.getElementById('chieucao').value);
-            let cannang = parseFloat(document.getElementById('cannang').value);
-        let tinhBMI=cannang/(chieucao*chieucao)
-        document.getElementById('ketqua').value = BMI;
-        if (BMI<18.5) {
-            document.writeln("thieu can");}
-        else if(BMI<=24.9 && BMI>18.5){
-            document.writeln("binh thuong");
-        }
-          else if(BMI<=25.5 && BMI>29.9){
-            document.writeln("thua can");
-        }
-          else if(BMI<=39.9 && BMI>30){
-            document.writeln("beo phi cap do 1-2");
-             
-            else{
-                document.writeln(beo phi nang)
+        function bmi(){
+            let cao = parseFloat(document.getElementById('chieucao').value);
+            let nang = parseFloat(document.getElementById('cannang').value);
+            let canhbao="";
+            if((!cao)||(cao<0)){
+                canhbao+="vui lòng nhập đúng giá trị chiều cao\n"
             }
-        }
+            if((!nang)||(nang<0)){
+                canhbao+="vui lòng nhập đúng giá trị cân nặng\n"
+            }
+            if(canhbao){
+                alert(canhbao);
+            }
+            let tinh = nang/(cao*cao)
+            document.getElementById('kq').value = tinh.toFixed(2);
+            if(tinh< 18.5){
+                document.getElementsByClassName('images')[0].src ="thieu.jpg";
+                document.getElementsByTagName('h1')[0].innerHTML="bạn bị thiếu cân"
+            }
+            else if(tinh >= 18.5 && tinh <25){
+                document.getElementsByClassName('images')[0].src ="bthuong.jpg";
+                document.getElementsByTagName('h1')[0].innerHTML="bạn đủ cân"
+            }
+            else if(tinh >= 25 && tinh < 30){
+                document.getElementsByClassName('images')[0].src ="thua.jpg";
+                document.getElementsByTagName('h1')[0].innerHTML="bạn thừa cân"
+            }
+            else if(tinh >=30 && tinh < 40){
+                document.getElementsByClassName('images')[0].src ="anh/beophi12.jpg";
+                document.getElementsByTagName('h1')[0].innerHTML="bạn bị béo phì nhẹ"
+            }
+            else if(tinh >=40){
+                document.getElementsByClassName('images')[0].src ="beophinang.jpg";
+                document.getElementsByTagName('h1')[0].innerHTML="bạn bị béo phì nặng"
+            }
         }
     </script>
 </body>
